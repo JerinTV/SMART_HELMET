@@ -3,16 +3,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const headingText = "WHY SMART HELMET?";
     const typingElement = document.getElementById("typing-text");
     let charIndex = 0;
+    let typingInterval;
 
     function typeHeading() {
-        if (charIndex < headingText.length) {
-            typingElement.textContent += headingText.charAt(charIndex);
-            charIndex++;
-            setTimeout(typeHeading, 70); // Speed of typing
-        }
+        typingElement.textContent = ""; // Reset content before starting over
+        charIndex = 0;
+        typingInterval = setInterval(() => {
+            if (charIndex < headingText.length) {
+                typingElement.textContent += headingText.charAt(charIndex);
+                charIndex++;
+            } else {
+                clearInterval(typingInterval); // Stop the typing once done
+            }
+        }, 170); // Speed of typing
     }
 
-    typeHeading(); // Start typing animation
+    // Start typing animation
+    typeHeading();
 
     // Auto-Fading Info Text
     const sentences = document.querySelectorAll(".info-paragraph");
@@ -32,4 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Show first sentence immediately
     showNextSentence();
     setInterval(showNextSentence, 3500); // Change every 3 sec
+
+    // Continuously restart typing animation after the first one
+    setInterval(() => {
+        typeHeading(); // Restart typing animation
+    }, headingText.length * 70 + 2000); // Ensure restart after the entire text has been typed and a short delay
 });
