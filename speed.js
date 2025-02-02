@@ -10,13 +10,25 @@ const passwordInput = document.getElementById('password');
 const verificationSection = document.getElementById('verification-section');
 const monitoringSection = document.getElementById('monitoring-section');
 
-// Form submission (for now, accepts any input)
+// Correct Helmet ID and Password for successful verification
+const correctHelmetId = '12345';
+const correctPassword = '12345';
+
+// Form submission (check if the entered values match the correct ID and password)
 verificationForm.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // Simulate successful verification (for now, all inputs are accepted)
-    verificationSection.style.display = 'none'; // Hide verification section
-    monitoringSection.style.display = 'block'; // Show speed monitoring section
+    const enteredHelmetId = helmetIdInput.value;
+    const enteredPassword = passwordInput.value;
+
+    if (enteredHelmetId === correctHelmetId && enteredPassword === correctPassword) {
+        // Simulate successful verification
+        verificationSection.style.display = 'none'; // Hide verification section
+        monitoringSection.style.display = 'block'; // Show speed monitoring section
+    } else {
+        // Show an error message if the ID or password is incorrect
+        alert("Incorrect Helmet ID or Password! Please try again.");
+    }
 });
 
 // Simulate speed change
@@ -31,3 +43,4 @@ setInterval(() => {
         alertElement.style.display = 'none';
     }
 }, 1000);  // Update every second
+
