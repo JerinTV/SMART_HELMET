@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Helmet | Speed Monitoring</title>
+    <link rel="stylesheet" href="sp.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">SMART HELMET</div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="features.html">FEATURES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <button class="login-btn">LOGIN</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Speed Monitoring</h1>
+            <p>Real-time speed tracking for rider safety</p>
+        </div>
+    </section>
+
+    <!-- Verification Section -->
+    <section class="verification" id="verification-section">
+        <div class="info">
+            <h2>Helmet ID & Password Verification</h2>
+            <p>Enter your Helmet ID and Password to proceed.</p>
+
+            <form id="verification-form">
+                <input type="text" id="helmet-id" placeholder="Helmet ID" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Verify</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Speed Monitoring Section (Hidden initially) -->
+    <section class="monitoring" id="monitoring-section" style="display:none;">
+        <div class="info">
+            <h2>Speed Monitoring</h2>
+            <p>Monitor the rider's real-time speed and receive alerts if speed limits are exceeded.</p>
+            <!-- Speed Display -->
+            <div id="speed-display">
+                <h3>Current Speed: <span id="speed">0</span> km/h</h3>
+            </div>
+            <p class="alert" id="alert" style="display:none;">Speed limit exceeded! Please slow down.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>ABOUT THE SMART HELMET</h2>
+        <p>
+            The Smart Helmet features advanced technology to help keep riders safe by monitoring speed and location, 
+            providing immediate alerts when exceeding safe limits, and ensuring timely assistance during emergencies.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Smart Helmet. All Rights Reserved.</p>
+    </footer>
+
+    <script src="sp.js"></script>
+</body>
+</html>
