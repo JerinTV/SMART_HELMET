@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Helmet | IoT Features</title>
+    <link rel="stylesheet" href="iot.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">SMART HELMET</div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="features.html">FEATURES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <button class="login-btn">LOGIN</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>IoT Features</h1>
+            <p>Smart features to keep you safe and connected</p>
+        </div>
+    </section>
+
+    <!-- Verification Section -->
+    <section class="verification" id="verification-section">
+        <div class="info">
+            <h2>Helmet ID & Password Verification</h2>
+            <p>Enter your Helmet ID and Password to proceed.</p>
+
+            <form id="verification-form">
+                <input type="text" id="helmet-id" placeholder="Helmet ID" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Verify</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- IoT Features Section (Hidden initially) -->
+    <section class="iot-features" id="iot-section" style="display:none;">
+        <h2>Helmet IoT Features</h2>
+        
+        <!-- Battery Monitoring -->
+        <div class="feature">
+            <h3>Battery Monitoring</h3>
+            <p>Helmet Battery Level: <span id="battery-level">75%</span></p>
+            <p>Connected Device Battery Status: <span id="device-battery">85%</span></p>
+            <p>Charging Status: <span id="charging-status">Not Charging</span></p>
+        </div>
+
+        <!-- Alert Notifications -->
+        <div class="feature">
+            <h3>Alert Notifications</h3>
+            <p>Low Battery Alert: <span id="low-battery-alert">Off</span></p>
+            <p>Sensor Malfunction Alert: <span id="sensor-alert">None</span></p>
+            <p>Connection Status: <span id="connection-status">Connected</span></p>
+        </div>
+
+        <!-- Emergency and SOS Features -->
+        <div class="feature">
+            <h3>Emergency & SOS</h3>
+            <p>SOS Mode: <span id="sos-status">Inactive</span></p>
+            <button id="activate-sos" class="button">Activate SOS</button>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Smart Helmet. All Rights Reserved.</p>
+    </footer>
+
+    <script src="iot.js"></script>
+</body>
+</html>

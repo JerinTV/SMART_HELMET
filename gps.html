@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Helmet | GPS Tracking</title>
+    <link rel="stylesheet" href="gps.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">SMART HELMET</div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="features.html">FEATURES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <button class="login-btn">LOGIN</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>GPS Tracking</h1>
+            <p>Real-time location tracking for enhanced rider safety</p>
+        </div>
+    </section>
+
+    <!-- Verification Section -->
+    <section class="verification" id="verification-section">
+        <div class="info">
+            <h2>Helmet ID & Password Verification</h2>
+            <p>Enter your Helmet ID and Password to proceed.</p>
+
+            <form id="verification-form">
+                <input type="text" id="helmet-id" placeholder="Helmet ID" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Verify</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- GPS Tracking Section (Hidden initially) -->
+    <section class="tracking" id="tracking-section" style="display:none;">
+        <div class="info">
+            <h2>Live GPS Tracking</h2>
+            <p>Monitor the rider's real-time location.</p>
+            <!-- Google Maps Embed -->
+            <iframe id="gps-map" src="" width="100%" height="400" style="border:0;"></iframe>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>ABOUT THE SMART HELMET</h2>
+        <p>
+            The Smart Helmet includes GPS tracking to ensure safety, allowing real-time monitoring of the rider’s location.
+            This feature provides immediate assistance during emergencies and enhances overall road safety.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Smart Helmet. All Rights Reserved.</p>
+    </footer>
+
+    <script src="gps.js"></script>
+</body>
+</html>
