@@ -43,4 +43,3 @@ setInterval(() => {
         alertElement.style.display = 'none';
     }
 }, 1000);  // Update every second
-
