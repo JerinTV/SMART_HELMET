@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Helmet | Accident Alert System</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">SMART HELMET</div>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">FEATURES</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+            <button class="login-btn">LOGIN</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>
+                SMART HELMET WITH <br><span>ACCIDENT ALERT SYSTEM</span>
+            </h1>
+        </div>
+    </section>
+
+    <!-- Info Section (Para and Helmet Image) -->
+    <section class="photo">
+        <div class="info">
+            <h2 class="info-heading"><span id="typing-text"></span></h2>
+            <p class="info-paragraph">The Smart Helmet provides real-time speed monitoring and alerts the rider when they exceed safe limits.</p>
+            <p class="info-paragraph">It includes GPS tracking to ensure emergency responders can quickly locate the rider in case of an accident.</p>
+            <p class="info-paragraph">Integrated IoT technology connects with emergency services for faster response times and improved rider safety.</p>
+            
+            <!-- Dots for sliding effect -->
+            <div class="slider-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    
+        <div class="hero-image">
+            <!-- 3D Helmet Model -->
+            <model-viewer 
+                src="racing.glb" 
+                alt="3D Smart Helmet"
+                auto-rotate 
+                camera-controls 
+                ar 
+                shadow-intensity="1"
+                interaction-prompt="none">
+            </model-viewer>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>KEY FEATURES</h2>
+        <div class="feature-box">
+            <div class="feature">
+                <h3>Speed Monitoring</h3>
+                <p>Alerts when exceeding speed limits.</p>
+            </div>
+            <div class="feature">
+                <h3>GPS Tracking</h3>
+                <p>Real-time location sharing for emergencies.</p>
+            </div>
+            <div class="feature">
+                <h3>IoT Integration</h3>
+                <p>Connects with emergency services for quick assistance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>ABOUT THE PROJECT</h2>
+        <p>
+            The Smart Helmet is designed to enhance rider safety by integrating cutting-edge technology for speed monitoring, location tracking, and emergency connectivity.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Smart Helmet. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
